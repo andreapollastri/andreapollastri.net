@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");*/
+
+@font-face {
+	font-family: Instrument Sans;
+	font-style: normal;
+	font-stretch: 100%;
+	font-display: block;
+	src: url(/fonts/InstrumentSans.woff2) format("woff2");
+	unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+	U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+	U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 #CookiebotWidget .CookiebotWidget-consent-details button {
 	color: #000 !important
@@ -360,7 +371,8 @@ body,
 input,
 select,
 textarea {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+	font-family: "Instrument Sans", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.65;
