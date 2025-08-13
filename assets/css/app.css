@@ -556,12 +556,10 @@ textarea {
 
 a {
   color: #000000;
-  text-decoration-line: grammar-error;
 }
 
 a:hover {
   color: #677067;
-  text-decoration-line: underline;
 }
 
 strong,
