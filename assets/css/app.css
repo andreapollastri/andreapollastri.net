@@ -556,7 +556,7 @@ textarea {
 
 a {
   color: #000000;
-  text-decoration: none;
+  text-decoration-line: underline overline;
 }
 
 a:hover {
