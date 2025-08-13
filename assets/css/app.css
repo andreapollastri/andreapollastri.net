@@ -560,8 +560,8 @@ a {
 }
 
 a:hover {
-  color: #000000;
-  font-size: 1.12rem;
+  color: #677067;
+  text-decoration-line: underline;
 }
 
 strong,
