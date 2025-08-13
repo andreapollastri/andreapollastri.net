@@ -560,7 +560,8 @@ a {
 }
 
 a:hover {
-  color: #677067;
+  color: #000000;
+  font-size: 1.12rem;
 }
 
 strong,
