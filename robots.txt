@@ -1,4 +1,0 @@
-User-agent: is_archiver
-Disallow: /
-
-Sitemap: https://andreapollastri.net/sitemap.xml
