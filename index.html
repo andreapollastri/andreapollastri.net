@@ -6,6 +6,9 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta name="googlebot" content="noindex,nofollow" />
     <title>Andrea Pollastri</title>
+    <meta name="description" content="Software Developer since 2005" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -35,163 +38,63 @@
       rel="manifest"
       href="https://andreapollastri.net/favicon/site.webmanifest"
     />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
-        padding: 40px 20px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
 
-      .card {
-        text-align: center;
-        max-width: 440px;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(20px);
-        border-radius: 24px;
-        padding: 56px 48px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
-          0 20px 40px rgba(0, 0, 0, 0.02);
-        border: 1px solid rgba(0, 0, 0, 0.05);
-      }
-
-      .logo {
-        width: 88px;
-        height: 88px;
-        margin: 0 auto 36px;
-        opacity: 0.95;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-      }
-
-      .logo:hover {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-
-      h1 {
-        font-size: 2.25rem;
-        color: #0a0a0a;
-        margin-bottom: 12px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-        line-height: 1.2;
-      }
-
-      .subtitle {
-        font-size: 0.95rem;
-        color: #737373;
-        margin-bottom: 56px;
-        font-weight: 400;
-        letter-spacing: -0.01em;
-      }
-
-      .links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 18px 24px;
-        background: rgba(255, 255, 255, 0.8);
-        color: #0a0a0a;
-        text-decoration: none;
-        font-size: 0.95rem;
-        font-weight: 500;
-        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-        border-radius: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.06);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
-        letter-spacing: -0.01em;
-      }
-
-      a:hover {
-        background: #ffffff;
-        border-color: rgba(0, 0, 0, 0.1);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      }
-
-      a:active {
-        transform: translateY(0);
-      }
-
-      .icon {
-        margin-right: 12px;
-        width: 20px;
-        height: 20px;
-        opacity: 0.7;
-        stroke-width: 2;
-        transition: opacity 0.2s ease;
-      }
-
-      a:hover .icon {
-        opacity: 0.9;
-      }
-
-      @media (max-width: 600px) {
-        body {
-          padding: 20px;
-        }
-
-        .card {
-          padding: 44px 32px;
-        }
-
-        .logo {
-          width: 72px;
-          height: 72px;
-          margin-bottom: 30px;
-        }
-
-        h1 {
-          font-size: 1.85rem;
-          margin-bottom: 10px;
-        }
-
-        .subtitle {
-          font-size: 0.875rem;
-          margin-bottom: 44px;
-        }
-
-        a {
-          font-size: 0.9rem;
-          padding: 16px 20px;
-        }
-      }
-    </style>
+    <!-- Scripts -->
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="card">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg
+          class="sun-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+          />
+        </svg>
+        <svg
+          class="moon-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+      </button>
+
       <img
         src="https://andreapollastri.net/favicon/favicon-96x96.png"
         alt="Andrea Pollastri"
         class="logo"
       />
+
       <h1>Andrea Pollastri</h1>
       <p class="subtitle">Software Developer since 2005</p>
+
       <div class="links">
         <a href="https://web.ap.it" target="_blank" rel="noopener noreferrer">
           <svg
@@ -209,6 +112,7 @@
           </svg>
           Website
         </a>
+
         <a
           href="https://www.linkedin.com/in/andrea-pollastri/"
           target="_blank"
@@ -229,6 +133,7 @@
           </svg>
           LinkedIn
         </a>
+
         <a
           href="https://andreapollastri.medium.com/"
           target="_blank"
@@ -249,6 +154,7 @@
           </svg>
           Medium
         </a>
+
         <a
           href="https://github.com/andreapollastri"
           target="_blank"
