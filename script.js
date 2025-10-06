@@ -10,8 +10,9 @@
 })();
 
 // Theme management
-const themeToggle = document.getElementById("themeToggle");
-const root = document.documentElement;
+document.addEventListener("DOMContentLoaded", function() {
+  const themeToggle = document.getElementById("themeToggle");
+  const root = document.documentElement;
 
 // Get saved theme from localStorage or use system preference
 function getPreferredTheme() {
@@ -44,12 +45,13 @@ setTheme(getPreferredTheme());
 // Listen for theme toggle button click
 themeToggle.addEventListener("click", toggleTheme);
 
-// Listen for system theme changes
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", (e) => {
-    // Only update if user hasn't manually set a preference
-    if (!localStorage.getItem("theme")) {
-      setTheme(e.matches ? "dark" : "light");
-    }
-  });
+  // Listen for system theme changes
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (e) => {
+      // Only update if user hasn't manually set a preference
+      if (!localStorage.getItem("theme")) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    });
+});
